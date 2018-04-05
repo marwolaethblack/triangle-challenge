@@ -12,15 +12,29 @@ Triangle = new Triangle();
 
 //Add event handler to form
 form.onsubmit = (e) => {
+    
     e.preventDefault();
     const inputValues = [];
+    let error = "";
+
+
     inputs.forEach(input => {
-        inputValues.push(sanitizeInput(input.value));
+        try {
+            inputValues.push(sanitizeInput(input.value));
+        } catch(err) {
+            error = err.message;
+        }   
     });
+
+    if(error.length > 1) {
+        resultParagraph.textContent = error;
+        return;
+    }
 
     const numOfEqualSides = Triangle.numOfEqualSides(inputValues);
     const type = Triangle.findType(numOfEqualSides);
-
+    
     resultParagraph.textContent = "The triangle is " + type;
+   
 }
 

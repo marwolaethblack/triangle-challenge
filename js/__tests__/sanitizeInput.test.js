@@ -17,3 +17,8 @@ test("it sanitizes a float input", () => {
    
     expect(sanitizedValue).toBe(5.2);
 });
+
+
+test("it throws an error with a negative value", () => {
+    expect(() => {sanitizeInput(-5)}).toThrow();
+});
