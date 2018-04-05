@@ -1,6 +1,6 @@
 'use strict'
 
-const sanitizeInput = require('../sanitizeInput.js');
+const sanitizeInput = require('../util/sanitizeInput.js');
 
 test("it sanitizes an int input", () => {
     const input = document.createElement('input');

@@ -1,6 +1,6 @@
 'use strict'
 let Triangle = require('./Triangle');
-const sanitizeInput = require('./sanitizeInput');
+const sanitizeInput = require('./util/sanitizeInput');
 
 const resultParagraph = document.querySelector(".result");
 const inputs = document.querySelectorAll("input[type=number]");

@@ -1,3 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#2f2c2c;
+    background:#f3f3f3;
+}
+
 .container {
     display: flex;
     flex: 1;
@@ -12,6 +18,35 @@
     flex-direction: column;
 }
 
-.triangle-form input {
+.input-container {
     padding: 1em;
+    display:flex;
+    flex-direction: column;
 }
+
+.input-container label{
+    padding-bottom: 0.8em;
+    font-size: 1.3em;
+}
+
+.form-submit {
+    font-size: 1.5em;
+    background: #2f2c2c;
+    color: #f3f3f3;
+    padding: 0.5em;
+    border: 2px solid #2f2c2c;
+    border-radius: 5px;
+
+}
+
+.form-submit:hover {
+    background: #f3f3f3;
+    color: #2f2c2c;
+    cursor: pointer;
+    border: 2px solid #2f2c2c;
+}
+
+.result-container {
+    font-size: 2em;
+}
+
