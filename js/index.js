@@ -32,9 +32,15 @@ form.onsubmit = (e) => {
     }
 
     const numOfEqualSides = Triangle.numOfEqualSides(inputValues);
-    const type = Triangle.findType(numOfEqualSides);
+    try{
+        const type = Triangle.findType(numOfEqualSides);
+        resultParagraph.textContent = "The triangle is " + type;
+    } catch(err) {
+        resultParagraph.textContent = err.message;
+    }
     
-    resultParagraph.textContent = "The triangle is " + type;
+    
+    
    
 }
 
