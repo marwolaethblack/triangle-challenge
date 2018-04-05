@@ -13,6 +13,7 @@ class Triangle {
         }
     }
     
+    //Removes duplicate entries in an array
     removeDupsFromArray(array) {
        return Array.from(new Set(array))
     }
@@ -26,11 +27,12 @@ class Triangle {
         return equalSides;
     }
 
+    //findType finds the type of the triangle according to the number of its equal sides
     findType(numOfEqualSides) {
-        if(types[numOfEqualSides]) {
-            return types[numOfEqualSides]
+        if(this.types[numOfEqualSides]) {
+            return this.types[numOfEqualSides]
         }
-        throw new Error("Invalid amout of equal sides");
+        throw new Error("No such type with that many equal sides");
     }
 }
 

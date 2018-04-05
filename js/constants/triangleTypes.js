@@ -1,3 +1,4 @@
+'use strict'
 const triangleTypes = {
     EQUILATERAL: "EQUILATERAL",
     ISOSCELES: "ISOSCELES",
