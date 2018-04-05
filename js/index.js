@@ -18,6 +18,7 @@ form.onsubmit = (e) => {
     let error = "";
 
 
+    //Sanitize each input value, if thats not possible catch error and assign it to a variable
     inputs.forEach(input => {
         try {
             inputValues.push(sanitizeInput(input.value));
@@ -26,12 +27,16 @@ form.onsubmit = (e) => {
         }   
     });
 
+    //If an error was thrown during sanitization display it and return
     if(error.length > 1) {
         resultParagraph.textContent = error;
         return;
     }
 
+    //Find the amount of equal sides of the triangle
     const numOfEqualSides = Triangle.numOfEqualSides(inputValues);
+
+    //Try to find the type fo the triangle if it throws and error display it
     try{
         const type = Triangle.findType(numOfEqualSides);
         resultParagraph.textContent = "The triangle is " + type;
