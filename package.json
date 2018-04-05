@@ -1,0 +1,16 @@
+{
+  "name": "triangles",
+  "version": "1.0.0",
+  "description": "Finds out the type of a triangle",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "grunt": "grunt"
+  },
+  "author": "Adnan Unal",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
