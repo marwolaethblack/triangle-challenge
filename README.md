@@ -13,7 +13,7 @@ Since I have bundled my code with Webpack this drawback is avoided, Webpack auto
 For my testing platform I decided to use jest. This decision was based on my good previous experience with it.
 It enables me to write unit tests quickly without problems.
 
-As for the algorithm deciding what king of triangle it is according to the input, I have decided to create a base Class Polygon with methods that could be relevant to other shapes and a Class "Triangle" which inherits from polygon and holds all the methods and properties relevant to it.  
+As for the algorithm deciding what king of triangle it is according to the input, I have decided to create a base Class Polygon with methods that could be relevant to other shapes and a Class "Triangle" which inherits from the base class "Polygon" and holds all the methods and properties relevant to it.  
 This way I can reuse the code just as if I was using a npm module.  
 I just have to create an instance of the class. This also helps me reason the structure of my project better because all the code required for finding a triangle type is in one place - the triangle Class.
 
