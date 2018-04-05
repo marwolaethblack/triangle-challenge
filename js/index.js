@@ -1,5 +1,5 @@
 'use strict'
-let Triangle = require('./Triangle');
+let Triangle = require('./modules/Triangle');
 const sanitizeInput = require('./util/sanitizeInput');
 
 const resultParagraph = document.querySelector(".result");

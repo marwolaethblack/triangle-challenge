@@ -1,5 +1,5 @@
 'use strict'
-const Triangle = require('../Triangle.js');
+const Triangle = require('../modules/Triangle.js');
 const triangleTypes = require('../constants/triangleTypes')
 
 const triangle = new Triangle();
