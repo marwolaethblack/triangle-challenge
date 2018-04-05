@@ -1,5 +1,7 @@
 # triangle-challenge
 
+Open the index.html file to start!
+
 All tests passing, to run the tests yourself first run `yarn install` or `npm install`, then run `yarn test or npm test`.
 
 For this project I decided to use modern javascript features (ES6+).  
